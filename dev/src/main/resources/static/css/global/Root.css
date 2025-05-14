@@ -1,0 +1,16 @@
+html {
+      font-size: 12px;
+}
+
+body {
+      width: 100dvw;
+      height: 100dvh;
+      margin: 0;
+      padding: 0;
+}
+
+* {
+      user-select: none;
+      box-sizing: border-box;
+      font-family: 'SCDream', 'Pretendard', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}

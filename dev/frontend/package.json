@@ -1,0 +1,13 @@
+{
+      "devDependencies": {
+            "typescript": "^5.8.3"
+      },
+      "scripts": {
+            "build": "tsc",
+            "build-src": "tsc --project src/tsconfig.json"
+      },
+      "dependencies": {
+            "@types/jquery": "^3.5.32",
+            "jquery": "^3.7.1"
+      }
+}

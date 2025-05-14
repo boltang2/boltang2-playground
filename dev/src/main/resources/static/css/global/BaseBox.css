@@ -1,0 +1,103 @@
+/*? txt-box */
+.txt-box {
+      position: relative !important;
+      display: flex !important;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+}
+
+.txt-box input {
+      width: 100%;
+      height: 100%;
+      outline: none;
+      border: none;
+      font-family: 'SCDream', 'Pretendard', 'Inter', 'Helvetica Neue', Arial, sans-serif;
+}
+
+/*? btn-box */
+.btn-box {
+      position: relative !important;
+      display: flex !important;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+}
+
+.btn-box:hover {
+      cursor: pointer;
+}
+
+/*? svg-box */
+.svg-box {
+      position: relative !important;
+      display: flex !important;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+}
+
+/*? img-box */
+.img-box {
+      position: relative !important;
+      display: flex !important;
+      width: 100%;
+      height: 100%;
+      align-items: center;
+      justify-content: center;
+}
+
+/*? size-box */
+[data-css-size='1/1'] {
+      width: 100%;
+      height: 100%;
+}
+
+/*? align-box */
+[data-css-align] {
+      position: relative !important;
+      display: flex !important;
+}
+
+[data-css-align*='center'] {
+      align-items: center;
+      justify-content: center;
+}
+
+[data-css-align*='top'] {
+      align-items: flex-start !important;
+}
+
+[data-css-align*='bottom'] {
+      align-items: flex-end !important;
+}
+
+[data-css-align*='left'] {
+      justify-content: flex-start !important;
+}
+
+[data-css-align*='right'] {
+      justify-content: flex-end !important;
+}
+
+/*? grid-box */
+[data-css-row],
+[data-css-column] {
+      position: relative !important;
+      display: grid !important;
+      width: 100%;
+      height: 100%;
+      grid-template-rows: 100%;
+      grid-template-columns: 100%;
+}
+
+/*? hide */
+.hide {
+      display: none !important;
+}
