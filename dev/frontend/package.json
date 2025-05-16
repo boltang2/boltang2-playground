@@ -1,13 +1,21 @@
 {
       "devDependencies": {
-            "typescript": "^5.8.3"
+            "@types/node": "^22.15.18",
+            "@types/react": "^18.x.x",
+            "@types/react-dom": "^18.x.x",
+            "@vitejs/plugin-react": "^4.4.1",
+            "typescript": "^5.8.3",
+            "vite": "^6.3.5"
       },
       "scripts": {
-            "build": "tsc",
-            "build-src": "tsc --project src/tsconfig.json"
+            "dev": "vite",
+            "preview": "vite preview",
+            "build-vite": "vite build"
       },
       "dependencies": {
             "@types/jquery": "^3.5.32",
-            "jquery": "^3.7.1"
+            "jquery": "^3.7.1",
+            "react-dom": "^18.3.1",
+            "react": "^18.3.1"
       }
 }

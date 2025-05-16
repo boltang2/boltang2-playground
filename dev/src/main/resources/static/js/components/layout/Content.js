@@ -1,0 +1,1 @@
+import{j as r}from"../../chunks/jsx-runtime.js";const n=()=>r.jsx("main",{style:{flex:1,padding:"1rem",boxSizing:"border-box",backgroundColor:"#ecf0f1"},children:r.jsx("h1",{children:"Content Area"})});export{n as C};

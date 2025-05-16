@@ -264,33 +264,14 @@
 							<arguments>install</arguments>
 						</configuration>
 					</execution>
-					<!-- TypeScript 패키지 설치 (자동으로 typescript 설치) -->
 					<execution>
-						<id>npm install typescript</id>
-						<goals>
-							<goal>npm</goal>
-						</goals>
-						<configuration>
-							<arguments>install --save-dev typescript</arguments>
-						</configuration>
-					</execution>
-					<execution>
-						<id>npm install jquery</id>
-						<goals>
-							<goal>npm</goal>
-						</goals>
-						<configuration>
-							<arguments>install jquery @types/jquery --save</arguments>
-						</configuration>
-					</execution>
-					<execution>
-						<id>npm build src</id>
+						<id>npm build vite</id>
 						<goals>
 							<goal>npm</goal>
 						</goals>
 						<phase>generate-resources</phase>
 						<configuration>
-							<arguments>run build-src</arguments>
+							<arguments>run build-vite</arguments>
 						</configuration>
 					</execution>
 				</executions>

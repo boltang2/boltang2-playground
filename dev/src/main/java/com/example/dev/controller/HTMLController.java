@@ -25,9 +25,24 @@ public class HTMLController {
 	}
 
 	@GetMapping("/get.do")
-	private String toHtml(@RequestParam(name = "category", required = false) String category, HttpSession session,
+	private String toHtml(@RequestParam(name = "key", required = false) String category, HttpSession session,
 			Model model) {
-		String html = "";
+
+		String html = switch (category) {
+		case "front-end__framework__React.js" -> {
+			yield "frontend/framework/React";
+		}
+		case "front-end__animation__Css(Only)" -> {
+			yield "frontend/animation/CssOnly";
+		}
+		case "front-end__animation__Anime.js" -> {
+			yield "frontend/animation/AnimeJs";
+		}
+		default -> {
+			yield "template/404";
+		}
+		};
+
 		return html;
 	}
 

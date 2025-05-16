@@ -6,156 +6,20 @@
             <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <title></title>
 
-            <!-- Jquery JS -->
-            <script src="../../thirdParty/jquery/jquery-3.7.1.min.js"></script>
-
-            <!-- Anime JS -->
-            <script src="../../thirdParty/anime/anime.min.js"></script>
-
-            <!-- Flatpickr CSS -->
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
-            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/style.css" />
-
-            <!-- Flatpickr JS -->
-            <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-            <script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/plugins/monthSelect/index.js"></script>
-
             <!-- CSS -->
             <link rel="stylesheet" href="../../css/global/Root.css" />
             <link rel="stylesheet" href="../../css/global/BaseBox.css" />
             <link rel="stylesheet" href="../../css/global/BaseColor.css" />
             <link rel="stylesheet" href="../../css/global/BaseFont.css" />
-            <link rel="stylesheet" href="../../css/index/Index.css" />
+            <link rel="stylesheet" href="../../css/global/BaseKeyframe.css" />
+            <link rel="stylesheet" href="../../css/page/Index.css" />
 
             <!-- JS -->
-            <!--
-            <script src="../../js/service/HtmlService.js"></script>
-            <script src="../../js/page/Index.js"></script>
-            <script src="../../js/global/Observer.js"></script>
-            <script src="../../js/global/EventListener.js"></script>
-            -->
             <script type="module" src="../../js/main.js"></script>
       </head>
       <body>
-            <div id="container" data-css-size="1/1" data-css-align="center" data-css-column="48 0 auto:1fr">
-                  <div id="container__sidebar" data-css-size="1/1" data-css-column="48 0 1:0.04:auto">
-                        <div id="sidebar__mainbar" data-css-size="1/1" data-css-row="48 0 2:1:1:1:1:1fr">
-                              <div></div>
-                              <div
-                                    id="back-end"
-                                    class="mainbar__li btn-box svg-box"
-                                    data-custom-svg="square-letter-b-outline"
-                                    data-action-type="oneway/selected"
-                                    data-action-template="maximize:sidebar__panelbar"
-                              ></div>
-                              <div
-                                    id="front-end"
-                                    class="mainbar__li btn-box svg-box"
-                                    data-custom-svg="square-letter-f-outline"
-                                    data-action-type="oneway/selected"
-                                    data-action-template="maximize:sidebar__panelbar"
-                              ></div>
-                        </div>
-                        <div id="sidebar__border"></div>
-                        <div
-                              id="sidebar__panelbar"
-                              data-css-size="1/1"
-                              data-css-row="48 0 1:1:1fr"
-                              data-action-for="sidebar__panelbar"
-                              data-action-status="minimize"
-                        >
-                              <div id="panelbar__header" data-css-column="48 0 1fr:1">
-                                    <div id="header-title-box" class="txt-box" data-css-align="centerleft"></div>
-                                    <div
-                                          class="btn-box svg-box"
-                                          data-custom-svg="arrow-big-left-outline"
-                                          data-action-type="oneway"
-                                          data-action-template="minimize:sidebar__panelbar"
-                                    ></div>
-                              </div>
-                              <div id="panelbar__search" data-css-align="center">
-                                    <div id="panelbar__search__box" data-css-size="1/1">
-                                          <div class="svg-box" data-custom-svg="search"></div>
-                                          <input type="text" placeholder="Search..." data-css-size="1/1" />
-                                    </div>
-                              </div>
-                              <div id="panelbar__body">
-                                    <div id="panelbar__back-end" data-css-size="1/1" class="panelbar__ul hide"></div>
-                                    <div id="panelbar__front-end" data-css-size="1/1" class="panelbar__ul hide" data-css-row="48 0 auto:auto:1fr">
-                                          <div data-css-row="48 0 1:auto">
-                                                <div
-                                                      class="panelbar__li-header btn-box"
-                                                      data-css-column="48 0 1:1fr"
-                                                      data-action-type="toggle"
-                                                      data-action-template="maximize:minimize:front-end__framework"
-                                                >
-                                                      <div class="svg-box" data-custom-svg="border-corners"></div>
-                                                      <div class="txt-box" data-css-align="centerleft">Framework</div>
-                                                </div>
-                                                <div id="front-end__framework" class="panelbar__li-body" data-action-for="front-end__framework">
-                                                      <div class="panelbar__li btn-box" data-css-column="48 0 0.75:1:1fr" data-action-type="selected">
-                                                            <div class="dummy-box"></div>
-                                                            <div class="svg-box" data-custom-svg="corner-down-right"></div>
-                                                            <div class="txt-box" data-css-align="centerleft">React.js</div>
-                                                      </div>
-                                                      <div class="panelbar__li btn-box" data-css-column="48 0 0.75:1:1fr" data-action-type="selected">
-                                                            <div class="dummy-box"></div>
-                                                            <div class="svg-box" data-custom-svg="corner-down-right"></div>
-                                                            <div class="txt-box" data-css-align="centerleft">Vui.js</div>
-                                                      </div>
-                                                      <div class="panelbar__li btn-box" data-css-column="48 0 0.75:1:1fr" data-action-type="selected">
-                                                            <div class="dummy-box"></div>
-                                                            <div class="svg-box" data-custom-svg="corner-down-right"></div>
-                                                            <div class="txt-box" data-css-align="centerleft">Angular.js</div>
-                                                      </div>
-                                                </div>
-                                          </div>
-                                          <div data-css-row="48 0 1:auto">
-                                                <div
-                                                      class="panelbar__li-header btn-box"
-                                                      data-css-column="48 0 1:1fr"
-                                                      data-action-type="toggle"
-                                                      data-action-template="maximize:minimize:front-end__animation"
-                                                >
-                                                      <div class="svg-box" data-custom-svg="border-corners"></div>
-                                                      <div class="txt-box" data-css-align="centerleft">Animation</div>
-                                                </div>
-                                                <div id="front-end__animation" class="panelbar__li-body" data-action-for="front-end__animation">
-                                                      <div class="panelbar__li btn-box" data-css-column="48 0 0.75:1:1fr" data-action-type="selected">
-                                                            <div class="dummy-box"></div>
-                                                            <div class="svg-box" data-custom-svg="corner-down-right"></div>
-                                                            <div class="txt-box" data-css-align="centerleft">Css(only)</div>
-                                                      </div>
-                                                      <div class="panelbar__li btn-box" data-css-column="48 0 0.75:1:1fr" data-action-type="selected">
-                                                            <div class="dummy-box"></div>
-                                                            <div class="svg-box" data-custom-svg="corner-down-right"></div>
-                                                            <div class="txt-box" data-css-align="centerleft">Anime.js</div>
-                                                      </div>
-                                                      <div class="panelbar__li btn-box" data-css-column="48 0 0.75:1:1fr" data-action-type="selected">
-                                                            <div class="dummy-box"></div>
-                                                            <div class="svg-box" data-custom-svg="corner-down-right"></div>
-                                                            <div class="txt-box" data-css-align="centerleft">Velocity.js</div>
-                                                      </div>
-                                                      <div class="panelbar__li btn-box" data-css-column="48 0 0.75:1:1fr" data-action-type="selected">
-                                                            <div class="dummy-box"></div>
-                                                            <div class="svg-box" data-custom-svg="corner-down-right"></div>
-                                                            <div class="txt-box" data-css-align="centerleft">GSAP</div>
-                                                      </div>
-                                                      <div class="panelbar__li btn-box" data-css-column="48 0 0.75:1:1fr" data-action-type="selected">
-                                                            <div class="dummy-box"></div>
-                                                            <div class="svg-box" data-custom-svg="corner-down-right"></div>
-                                                            <div class="txt-box" data-css-align="centerleft">Popmotion</div>
-                                                      </div>
-                                                </div>
-                                          </div>
-                                          <div class="dummy-box"></div>
-                                    </div>
-                              </div>
-                        </div>
-                  </div>
-                  <div id="container__content" data-css-size="1/1"></div>
-            </div>
+            <div id="container"></div>
             <template id="template"></template>
-            <script></script>
+            <script type="module" src="../../js/main.js"></script>
       </body>
 </html>

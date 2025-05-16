@@ -1,0 +1,1 @@
+import{j as r}from"../../chunks/jsx-runtime.js";const o=()=>r.jsx("aside",{style:{width:"250px",backgroundColor:"#2c3e50",color:"white",padding:"1rem",boxSizing:"border-box"},children:r.jsx("h2",{children:"Sidebar"})});export{o as S};

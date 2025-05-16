@@ -1,0 +1,1 @@
+import{j as o}from"../../chunks/jsx-runtime.js";import{S as r}from"./Sidebar.js";import{C as t}from"./Content.js";import{G as s}from"./GridBox.js";function p(){return o.jsxs(s,{dataCssColumn:"48 0 auto:1fr",children:[o.jsx(r,{}),o.jsx(t,{})]})}export{p as A};
