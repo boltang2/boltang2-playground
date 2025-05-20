@@ -1,18 +1,34 @@
 import React from 'react';
+import { GridBox } from '@/components/common/boxes/GridBox';
+import Google from '@/components/layout/Google';
+interface ContentProps {
+      selectedKey: string | null;
+}
 
-const Content: React.FC = () => {
+const Content: React.FC<ContentProps> = ({ selectedKey }) => {
+      let content: React.ReactNode;
+      if (!selectedKey) {
+            content = <div>초기 상태입니다</div>;
+      } else {
+            switch (selectedKey.trim()) {
+                  case 'Google':
+                        content = <Google />;
+                        break;
+                  case 'KaKao':
+                        content = <div>카카오 로그인 예제입니다</div>;
+                        break;
+                  case 'Naver':
+                        content = <div>네이버 로그인 예제입니다</div>;
+                        break;
+                  default:
+                        content = <div>404 - 해당 내용을 찾을 수 없습니다.</div>;
+            }
+      }
+
       return (
-            <main
-                  style={{
-                        flex: 1,
-                        padding: '1rem',
-                        boxSizing: 'border-box',
-                        backgroundColor: '#ecf0f1',
-                  }}
-            >
-                  <h1>Content Area</h1>
-                  {/* 콘텐츠 영역 내용 추가 예정 */}
-            </main>
+            <GridBox id="content" dataCssRow="48 0 1:1fr">
+                  {content}
+            </GridBox>
       );
 };
 

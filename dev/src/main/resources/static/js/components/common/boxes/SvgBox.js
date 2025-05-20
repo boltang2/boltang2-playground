@@ -1,0 +1,1 @@
+import{j as t}from"../../../chunks/jsx-runtime.js";import{s as o}from"../maps/SvgMap.js";import"../../../chunks/index.js";const i=({svgType:r})=>r?t.jsx(t.Fragment,{children:o[r]||null}):null;export{i as S};

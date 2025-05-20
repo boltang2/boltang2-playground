@@ -1,0 +1,1 @@
+import{j as r}from"../../../chunks/jsx-runtime.js";import{S as s}from"./SvgBox.js";import"../../../chunks/index.js";import"../maps/SvgMap.js";const p=({searchType:e,children:t})=>e?r.jsxs("div",{className:"search-box__inner",children:[r.jsx(s,{svgType:"search-input"}),r.jsx("input",{type:"text",placeholder:"Search...","data-css-size":"1/1"})]}):null;export{p as S};
